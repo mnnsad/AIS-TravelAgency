@@ -1,0 +1,17 @@
+{
+  "app_name": "AIS-TravelAgency",
+  "version": "1.0.0",
+  "debug_mode": true,
+  "database": {
+    "type": "sqlite",
+    "path": "global_travel/database.db"
+  },
+  "payment_gateway": {
+    "provider": "stripe",
+    "currency": "RUB"
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "app.log"
+  }
+}
