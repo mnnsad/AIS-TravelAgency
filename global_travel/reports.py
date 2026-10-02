@@ -1,5 +1,5 @@
-from database import Database
-from datetime import date, datetime, timedelta
+from global_travel.database import Database
+from datetime import date, timedelta
 import csv
 
 
