@@ -2,10 +2,9 @@ import tkinter as tk
 from tkinter import ttk, messagebox, filedialog
 from datetime import datetime, date
 import sqlite3
-import os
 import csv
 
-from database import Database
+from global_travel.database import Database
 
 """Класс для генерации отчетов"""
 class ReportGenerator:

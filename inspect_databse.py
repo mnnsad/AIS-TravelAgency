@@ -1,6 +1,6 @@
 # inspect_database.py
 import inspect
-from database import Database
+from global_travel.database import Database
 
 print("=== ИНСПЕКЦИЯ КЛАССА DATABASE ===")
 print()

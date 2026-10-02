@@ -1,4 +1,4 @@
-from global_travel.database import Database
+from database import Database
 from datetime import date, timedelta
 import csv
 

@@ -1,13 +1,11 @@
-import pytest
 import sys
-import os
 
 sys.path.append('.')
 
 def test_01_import_database_module():
     """Тест 1: Модуль database.py существует и импортируется"""
     try:
-        from database import Database
+        from global_travel.database import Database
         print("[✓] Тест 1: Модуль database.py успешно импортирован")
         return True
     except ImportError as e:
@@ -18,7 +16,7 @@ def test_01_import_database_module():
 def test_02_database_connection():
     """Тест 2: База данных создает соединение"""
     try:
-        from database import Database
+        from global_travel.database import Database
         db = Database()
         conn = db.get_connection()
 
@@ -43,7 +41,7 @@ def test_02_database_connection():
 def test_03_tours_table_structure():
     """Тест 3: Структура таблицы tours соответствует требованиям"""
     try:
-        from database import Database
+        from global_travel.database import Database
         db = Database()
         conn = db.get_connection()
         cursor = conn.cursor()
@@ -70,7 +68,7 @@ def test_04_report_generator_exists():
     try:
         from desktop_app import ReportGenerator
 
-        from database import Database
+        from global_travel.database import Database
         db = Database()
         report_gen = ReportGenerator(db)
 
